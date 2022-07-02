@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+body {
+    background-image: linear-gradient(rgb(164, 164, 223), yellow, rgb(223, 196, 147), rgb(129, 207, 243), yellow, white, rgb(255, 196, 0))
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.stranitsa{
+    text-align: center;
+    font-size: 15px;
+}
+
+.photo_redaktor {
+    width: 400px;
+    height: 500px;
+}
+
+.summa_input{
+    height: 20px;
+    padding-top: -2px;
+}
+
+*{
+ margin: 0; padding: 0;
+ box-sizing: border-box;
+ outline: none; border: none;
+ text-decoration: none;
+ text-transform: uppercase;
+}
+
+.container{
+    min-height: 100vh;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding-bottom: 60px;
+}
+
+.big_letter{
+    font-family: 'Pacifico', cursive;
+}
+
+.area {
+  text-align: center;
+  font-size: 6.5em;
+  color: #fff;
+  letter-spacing: -7px;
+  font-weight: 700;
+  text-transform: uppercase;
+  animation: blur .75s ease-out infinite;
+  text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+}
+
+@keyframes blur {
+  from {
+    text-shadow:0px 0px 10px #fff,
+      0px 0px 10px red, 
+      0px 0px 25px red,
+      0px 0px 25px red,
+      0px 0px 25px red,
+      0px 0px 25px red,
+      0px 0px 25px red,
+      0px 0px 25px red,
+      0px 0px 50px red,
+      0px 0px 50px red,
+      0px 0px 50px black,
+      0px 0px 150px black,
+      0px 10px 100px black,
+      0px 10px 100px black,
+      0px 10px 100px black,
+      0px 10px 100px black,
+      0px -10px 100px black,
+      0px -10px 100px black;
+  }
+}
+
+.image_redaktor_multfilm_film_seriya{
+    width: 320px;
+    height: 420px;
+}
+@page :first {
+    margin: 1cm; /* Отступы для первой страницы */ 
+   }
+   @page :left {
+    margin: 1cm 3cm 1cm 1.5cm; /* Отступы для всех левых страниц */ 
+   }
+   @page :right {
+    margin: 1cm 3cm 1cm 1.5cm; /* Отступы для всех правых страниц */ 
+   }
